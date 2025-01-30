@@ -4,9 +4,8 @@ import com.bdd.web.step.LoginStep;
 //import net.thucydies.core.annotations.Steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-//import net.serenitybdd.annotations.Steps;
-import org.junit.Assert;
 
 
 public class LoginStepDefinition {
@@ -14,23 +13,16 @@ public class LoginStepDefinition {
 //    @Steps
 //    private LoginStep loginStep;
 
-    LoginStep loginStep= new  LoginStep();
+    LoginStep loginStep = new LoginStep();
 
-    @Given("que abro la pagina de organizate")
-    public void queAbroLaPaginaDeOrganizate() {
+    @Given("que abro la pagina de OrangeHRM")
+    public void queAbroLaPaginaDeOrangeHRM() {
         loginStep.abrirPagina();
     }
 
-    @When("presiono el boton inicio de sesion")
-    public void presionoElBotonInicioDeSesion() {
-    }
-
-    @And("relleno el formulario con los datos del cliente")
-    public void rellenoElFormularioConLosDatosDelCliente() {
-    }
-
-    @And("ingreso el password {string}")
-    public void ingresoElPassword(String arg0) {
+    @When("me logueo con mi usuario {string} y {string}")
+    public void meLogueoConMiUsuarioY(String user, String password) {
+        loginStep.loginUser(user, password);
     }
 
 

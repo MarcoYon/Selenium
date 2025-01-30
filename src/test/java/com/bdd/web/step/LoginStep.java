@@ -16,4 +16,9 @@ public class LoginStep {
         loginPage.inicializar();
     }
 
+    public void loginUser(String user, String password)
+    {
+        loginPage.loginUser(user, password);
+    }
+
 }

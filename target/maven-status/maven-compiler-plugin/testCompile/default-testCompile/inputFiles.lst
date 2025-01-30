@@ -1,4 +1,10 @@
 C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\runner\Runner.java
+C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\page\DashboardPage.java
 C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\page\LoginPage.java
+C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\page\PIMPage.java
+C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\step\DashboardStep.java
 C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\step\LoginStep.java
+C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\step\PIMStep.java
+C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\stepdefinition\DashboardStepDefinition.java
 C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\stepdefinition\LoginStepDefinition.java
+C:\Users\MAYN\IdeaProjects\ProjectSelenium\src\test\java\com\bdd\web\stepdefinition\PIMStepDefinition.java

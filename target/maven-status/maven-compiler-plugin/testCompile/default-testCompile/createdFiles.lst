@@ -1,4 +1,10 @@
-com\bdd\web\stepdefinition\LoginStepDefinition.class
 com\bdd\web\page\LoginPage.class
-com\bdd\web\step\LoginStep.class
+com\bdd\web\page\PIMPage.class
+com\bdd\web\page\DashboardPage.class
+com\bdd\web\stepdefinition\PIMStepDefinition.class
 com\bdd\runner\Runner.class
+com\bdd\web\stepdefinition\DashboardStepDefinition.class
+com\bdd\web\step\DashboardStep.class
+com\bdd\web\stepdefinition\LoginStepDefinition.class
+com\bdd\web\step\LoginStep.class
+com\bdd\web\step\PIMStep.class

@@ -1,16 +1,17 @@
 
-  Feature: Login de usuario en Organizate
+  Feature: Login de usuario en OrangeHRM
 
   @LoginCliente
-  Scenario Outline: Validar loguin de usuario exitoso
-    Given que abro la pagina de organizate
-    When presiono el boton inicio de sesion
-    And relleno el formulario con los datos del cliente
-    And ingreso el password "<password>"
+  Scenario Outline: Validar logueo de usuario exitoso
+    Given que abro la pagina de OrangeHRM
+    When me logueo con mi usuario "<usuario>" y "<contrasena>"
+    Then valido que ingrese a la pantalla principal Dashboard
+    And selecciono la opcion "<itemMenu>" del menu
 
     Examples:
-    | password |
-    | 111111   |
+    | usuario   | contrasena| itemMenu |
+    | admin     | admin123  | Admin     |
+
 
 
 
