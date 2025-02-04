@@ -7,12 +7,9 @@ pipeline {
                 git branch: "master" , url: "https://github.com/MarcoYon/Selenium.git"
             }
         }
-    }
-
-     stages {
         stage('Build') {
             steps {
-                sh "mvn clean package -DskipTests -B -ntp"
+                bat "mvn clean package -DskipTests -B -ntp"
             }
         }
     }
