@@ -30,4 +30,8 @@ public class PIMStep {
         pimPage.rellenarCreateLogin02(pwd);
     }
 
+    public void rellenarCreateLogin03()
+    {
+        pimPage.rellenarCreateLogin03();
+    }
 }

@@ -125,7 +125,11 @@ public class PIMPage extends Util{
         waitUntilElementIsVisible(txtPassword.get(0)).sendKeys(pwd);
         waitUntilElementIsVisible(txtPassword.get(1)).sendKeys(pwd);
         btnSave.click();
+    }
 
+    public void rellenarCreateLogin03()
+    {
+        btnSave.click();
         waitUntilElementIsVisible(saveEmployee);
 
         System.out.println("usuario agregado");

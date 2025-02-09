@@ -3,6 +3,7 @@ package com.bdd.web.stepdefinition;
 import com.bdd.web.page.PIMPage;
 import com.bdd.web.step.PIMStep;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 
 public class PIMStepDefinition {
 
@@ -36,5 +37,10 @@ public class PIMStepDefinition {
         if(createPwd==true){
             pimStep.rellenarCreateLogin02(pwd);
         }
+    }
+
+    @Then("presionamos en save para crear el empleado")
+    public void presionamosEnSaveParaCrearElEmpleado() {
+        pimStep.rellenarCreateLogin03();
     }
 }

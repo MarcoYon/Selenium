@@ -12,7 +12,7 @@ Feature: Agregar usuario
   And habilitamos la creacion de su Login "<habilitarLogin>"
   And ingresamos el "<userName>", seleccionamos el status "<status>"
   And ingresamos el password "<pwd>" y confirmamos el password
- # Then presionamos en save para crear el empleado
+  Then presionamos en save para crear el empleado
 
     Examples:
       | usuario   | contrasena| itemMenu  | habilitarLogin| firstName   | middleName |  lastName | userName   | status | pwd |
