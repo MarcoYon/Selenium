@@ -39,6 +39,7 @@ public class LoginPage extends Util {
 
     public void loginUser(String user, String password)
     {
+        scrollToElement(user);
         txtUser.sendKeys(user);
         txtPassword.sendKeys(password);
         scrollToElement(lblForgotPassword);
