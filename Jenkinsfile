@@ -2,15 +2,26 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout SCM') {
+//         stage('Checkout SCM') {
+//             steps {
+//                 git branch: "master" , url: "https://github.com/MarcoYon/Selenium.git"
+//             }
+//         }
+        stage('Compile') {
             steps {
-                git branch: "master" , url: "https://github.com/MarcoYon/Selenium.git"
+                bat "mvn clean compile -B -ntp"
+            }
+        }
+        stage('Test') {
+            steps {
+                bat "mvn test -B -ntp"
             }
         }
         stage('Build') {
-            steps {
-                bat "mvn clean package -DskipTests -B -ntp"
-            }
-        }
+             steps {
+                 bat "mvn package -B -ntp"
+             }
+         }
+
     }
 }
