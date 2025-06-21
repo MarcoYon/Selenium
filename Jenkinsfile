@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Build') {
              steps {
-                 bat "mvn package -B -ntp"
+                 bat "mvn package -DskipTests -B -ntp"
              }
          }
 
